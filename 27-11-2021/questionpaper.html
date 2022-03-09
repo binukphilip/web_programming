@@ -1,0 +1,31 @@
+<html><head>
+<title>Question paper</title>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+var i=0;
+function addmark()
+{	if(document.file1.q1[1].checked)
+		i=i+1;
+		
+	if(document.file1.q2[1].checked)
+		i=i+1;
+	alert("your score is :"+ i +" /2");
+}
+</script>
+<form name="file1">
+<label> How many letters are there in the English alphabet?</label><br>
+<label>a).25</label>
+<input type="radio" name="q1" id="qid1">
+&nbsp;
+&nbsp;
+<label>b).26</label><input type="radio" name="q1" id="qid1"><br>
+<label> Which month of the year has the least number of days?</label><br>
+<label>March</label><input type="radio" name="q2" id="qid2">
+&nbsp;
+&nbsp;
+<label>February</label><input type="radio" name="q2" id="qid2"></br>
+<button onclick="addmark()">Submit</button>
+</form>
+</body>
+</html>
