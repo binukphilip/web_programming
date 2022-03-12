@@ -1,0 +1,37 @@
+<html><head><title>form validation</title></head>
+<body>
+    <form>
+        <fieldset><legend>reg form</legend>
+            Name:<input type="text" id="txt1"><br>
+            Course:<input typ="text" id="txt2"><br>
+                year:<input type="text" id="txt3"> <br>
+                    password:<input type="password" id="txt4"><br>
+                    confirm password:<input type="password" id ="txt5"><br>
+                    <button onclick="validate()">save</button>
+                    <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" data-view-component="true" class="anim-rotate">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke"></circle>
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+</svg>
+        </fieldset>
+    </form>
+</body>
+<script>
+    function validate()
+    {
+        if(document.getElementById("txt1").value=="")
+            alert("enter your name");
+        else if(document.getElementById("txt2").value=="")
+            alert("please enter your course");
+        else if(document.getElementById("txt3".value==""))
+            alert("enter year");
+        else if(document.getElementById("txt4").value=="")
+            alert("enter password")
+        else if(document.getElementById("txt5").value=="")
+            alert("enter confirm password");
+        else if(document.getElementById("txt4").value!=document.getElementById("txt5").value)
+            alert("password and confirm password are mismatch");
+        else
+            alert("succdessfully submittesd")
+    }
+</script>
+</html>
